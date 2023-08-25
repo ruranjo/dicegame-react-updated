@@ -51,6 +51,11 @@ const NumberSelectorContainer = styled.div`
   .error{
     color:red;
   }
+
+  @media (max-width: 640px){
+    align-items:center;
+    gap:5px;
+  }
 `;
 
 const Box = styled.div`
@@ -66,6 +71,12 @@ const Box = styled.div`
     font-size:24px;
     &:hover{
       color: gray;
+    }
+
+    @media (max-width: 640px){
+      height: 32px;
+      width: 32px;
+      border-radius: 10px;
     }
 `;
 
