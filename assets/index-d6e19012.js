@@ -154,6 +154,11 @@ Error generating stack: `+i.message+`
   .error{
     color:red;
   }
+
+  @media (max-width: 640px){
+    align-items:center;
+    gap:5px;
+  }
 `,gm=Pt.div`
     background-color: ${e=>e.isSelected?"black":"white"};
     color: ${e=>e.isSelected?"white":"black"};
@@ -167,6 +172,12 @@ Error generating stack: `+i.message+`
     font-size:24px;
     &:hover{
       color: gray;
+    }
+
+    @media (max-width: 640px){
+      height: 32px;
+      width: 32px;
+      border-radius: 10px;
     }
 `,ym="/dicegame-react-updated/assets/dice_1-08b560e0.png",wm="/dicegame-react-updated/assets/dice_2-14739ed9.png",Sm="/dicegame-react-updated/assets/dice_3-ad994dc2.png",km="/dicegame-react-updated/assets/dice_4-fb89ccab.png",xm="/dicegame-react-updated/assets/dice_5-e21b72a3.png",Cm="/dicegame-react-updated/assets/dice_6-3ad9c189.png",Em=({roleDice:e,currentDice:t,selectedNumber:n})=>{const r=[ym,wm,Sm,km,xm,Cm];return M.jsxs(_m,{children:[M.jsx("div",{className:"dice",children:M.jsx("img",{src:r[t-1],alt:"dice"})}),n?M.jsx(Rr,{onClick:e,children:"Play"}):M.jsx(Rr,{disabled:!0,children:"Select a Number"})]})},_m=Pt.div`
 margin-top: 48px;
